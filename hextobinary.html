@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <title>FOC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style13.css">
+  <style>
+      </style>
+  </head>
+  <body>
+  <header>
+    <h2>Project 6: ASCII Converter: </h2>
+  </header>
+  
+  <section>
+    <div class="main">
+      <nav>
+    <ul>
+        <li><h5><a href="Course1.html">Course</h5></a></li>
+        <li><h5><a href="Project2.html">Project</h5></a></li>
+        <li><h5><a href="Concepts3.html">Concepts</h5></a></li>
+        <li><h5><a href="Database4.html">Database</h5></a></li>
+        <li><h5><a href="Documentation5.html">Documentation</h5></a></li>
+        <li><h5><a href="Aboutme.html">About me</h5></a></li>
+    </ul>
+    </nav>
+    </div>
+    <article>
+      <h1><center>ASCII CONVERTER</center></h1>
+  
+     <div class="container">
+      <h4>This is a ASCII to Text Converter:</h4></div>
+       <div class="row">
+        <div class="features">
+          <figure>
+                <img alt="andgate" src="ascii.png" width="480" height="420" class="images" style="margin-left: 600px; margin-top: -75px;"></figure></div>
+                <br>
+           <div class="col">
+           <br>
+      
+           <h3>Enter any number from 0 to 127 : <input id="inputdec" >
+           </h3>
+   
+           <button onclick="decToASCII()" style="margin-left: 200px;"><h5>CONVERT</h4></button>
+           <br><br>
+           <h4 style="margin-left: 185px;">ASCII Value : <h4 id="demo" style="margin-left: 230px;"></h4>
+           <br>
+
+               
+        <script>
+          function decToASCII() {
+            x = document.getElementById("inputdec").value;
+            var res = String.fromCharCode(x);
+            document.getElementById("demo").innerHTML = res;
+            console.log(res);
+          }
+          </script>
+           
+   
+  </div>
+ </article>
+ </section>
+  <footer>
+    <p>Moises Martinez </p>
+  </footer>
+  
+  </body>
+  </html>
+  
